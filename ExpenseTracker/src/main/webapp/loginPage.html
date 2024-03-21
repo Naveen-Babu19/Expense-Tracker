@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Spend Smart Login</title>
+        <link href="loginPage.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <div id = "whole-container">
+        <div id = "image-container"></div>
+        <div id = "login" class="contentPage">
+            <h1 class = "header">Welcome Back!</h1>
+            <div class="Box">
+                <div class = "inputBox">
+                    <p class="circle"><i class="fa-regular fa-envelope icon"></i></p>
+                    <input type="email" name="email" placeHolder="Enter email address" id="login-email" spellcheck="false" mandatory>
+                </div>
+                <p id="login-emailCorrection" class="incorrectNotice"></p>
+            </div>
+            <div class ="Box">
+                <div class="inputBox">
+                    <p class="circle"><i class="fa-solid fa-lock icon" style="color: #a6a6a6;"></i></p>
+                    <input type="password" name="password" placeHolder="Enter password" id="login-password">
+                </div>
+                <p id="login-passwordCorrection" class="incorrectNotice"></p>
+            </div>
+            <button onclick="login()" class="enteringButtons">Log in</button>
+            <p class ="accountText">Don't have an account?        <button class="changeButton" onclick="changeNext()">Sign-up</button></p>
+        </div>
+        <div id = "signup" class="disp-none contentPage">
+            <h1 class = "header">Create Account</h1>
+            <div class="sub-div">
+                <div class="divisions">
+                    <div class="signUpBox">
+                        <div class="inputBox">
+                            <p class="circle"><i class="fa-regular fa-user icon"></i></p>
+                            <input type="text" name="username" placeHolder="Enter your name" id="signup-username">
+                        </div>
+                    </div>
+                    <div class="signUpBox">
+                        <div class = "inputBox">
+                            <p class="circle"><i class="fa-regular fa-envelope icon"></i></p>
+                            <input type="email" name="email" placeHolder="Enter email address" id="signup-email">
+                        </div>
+                        <p id="signup-emailCorrection" class="incorrectNotice"></p>
+                    </div>
+                </div>
+                <div class="divisions"><div class="signUpBox">
+                        <div class="inputBox">
+                            <p class="circle"><i class="fa-solid fa-wallet icon" style="color: #a8a8a8;"></i></p>
+                            <input type="number" name="salary" placeHolder="Enter your salary" id="signup-salary">
+                        </div>
+                        <p id="salaryCorrection" class="incorrectNotice"></p>
+                    </div>
+                    <div class ="signUpBox">
+                        <div class="inputBox">
+                            <p class="circle"><i class="fa-solid fa-lock icon" style="color: #a6a6a6;"></i></p>
+                            <input type="password" name="password" placeHolder="Enter password" id="signup-password">
+                        </div>
+                        <p id="signup-passwordCorrection" class="incorrectNotice"></p>
+                    </div>
+                    <p class="passwordCreds">*Password must contain a letter and a number.<br>
+                        Must contains 8 characters or more.<br>
+                        Special characters and spaces are not allowed.</p>
+                </div>
+                <p id="signup-commonCorrection" class="incorrectNotice"></p>
+            </div>
+            <button onclick="signUp()" class="enteringButtons"  >Create</button>
+            <p class ="accountText">Already have an account? <button class="changeButton" onclick="changeNext()">Log-in</button></p>
+        </div>
+    </div>
+	
+	<script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+	<script src="login.js"></script>
+    </body>
+</html>

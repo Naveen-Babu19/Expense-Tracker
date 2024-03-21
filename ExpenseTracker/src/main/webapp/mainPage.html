@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="mainPage.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<title>Main Page</title>
+</head>
+<body>
+	<div id="wholeContainer">
+		<div class="infoContainer">
+			<h1 id="Greeting" class="greet">Hello, </h1>
+			<div id="infoShower">
+				<div id="showIncome" class="backgroundColor style-box">
+					<div class="innerHead">Income</div>
+					<div class="amount" id="income">₹</div>
+				</div>
+				<div id="showSpent" class="backgroundColor style-box">
+					<div class="innerHead">Amount spent</div>
+					<div class="amount" id="spent">₹</div>
+				</div>
+				<div id="showBalance" class="backgroundColor style-box">
+					<div class="innerHead">Balance</div>
+					<div class="amount" id="balance">₹</div>
+				</div>
+			</div>
+		</div>
+		<div id="statistics">
+			<h1 class="greet">Stats </h1>
+		</div>
+		<div id = "ExpenseShowerContainer">
+			<h1 class="greet">Transactions</h1>
+			<div class="expenseShower">
+				<p id="Nothing">You don't have any transactions in your inbox yet</p>
+				<a href="addExpense.html">Start tracking your expense</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+<script src="Logout.js"></script>
+<script src="mainPage.js"></script>
+<script>
+getDetails()
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

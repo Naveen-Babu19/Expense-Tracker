@@ -1,0 +1,165 @@
+*{
+    padding:0% ;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ecd8;
+    height: 99vh;
+    width: 100vw;
+}
+
+.contentPage{
+	height: 100%;
+	width: 55%;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.circle{
+	display: flex;
+	border: 2px solid black;
+    border-radius: 2%;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+    border-left:none ;
+    border-right: none;
+    border-bottom-color: lightgray;
+    width: 20%;
+}
+
+input{
+    border-radius: 2%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: lightgray;
+    padding-left: 3.5%;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.Box{
+	display: flex;
+	width: 60%;
+	height: 15%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#whole-container{
+    height: 75%;
+    width: 85%;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#image-container{
+    background-image: url("Images/expenseLogin.png");
+    height: 100%;
+    width: 45%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #D8DFF3;
+}
+
+.icon{
+    color: gray;
+    font-size: 1.5rem;
+}
+
+input:focus-visible{
+    transition: 0.65s;
+    outline:none;
+    border-bottom-color: rgb(80, 169, 253);
+}
+
+.inputBox{
+    display: flex;
+    height: 53%;
+    width: 90%;
+}
+
+.disp-none{
+    display: none !important;
+}
+
+.header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.incorrectNotice{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(233, 94, 94);
+}
+
+.enteringButtons{
+    height: 10%;
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+
+.changeButton{
+    height: 100%;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    color: rgb(103, 187, 255);
+}
+
+.accountText{
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    height: 7%;
+}
+
+.passwordCreds{
+    font-size: 1rem;
+    color: gray;
+    font-family: 'Inter', sans-serif;
+}
+.sub-div{
+    height: 45%;
+    width: 100%;
+    display: flex;
+}
+
+.divisions{
+    display: flex;
+    width: 49%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpBox{
+    display: flex;
+	width: 88%;
+	height: 35%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

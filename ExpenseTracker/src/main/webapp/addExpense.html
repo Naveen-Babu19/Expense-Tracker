@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link href="addExpense.css" rel="stylesheet" type="text/css">
+		<title>Add your Expense</title>
+	</head>
+	<body>
+		<div id="whole-container">
+			<div id="ExpenseAdderContainer">
+				<h1>Add your expense here</h1>
+				<input type="text" placeHolder = "Description" id="Description">
+				<select id="categories" oninput="checkCategory()">
+					<option name="food">Food</option>
+					<option name="others">Others</option>
+				</select>
+				<input type="number" placeHolder = "Amount" id="amount">
+				<button onclick = "sendExpenseToJava()" id="addButton">Add</button>
+			</div>
+			<div id="categoryAdder" class="none">
+				<div id="Category-heading">
+					<h1 style="color: black;">Add Category</h1>
+					<button class="closeButton" onclick="closeContainer()"><i class="fa-solid fa-xmark" style="color: #030303;"></i></button>
+				</div>
+				<input type="text" placeholder="Category name" name="categoryName" id="categoryName" class="category-style">
+				<input type="number" placeholder="Budget (Optional)" name="budget" id="budget" class="category-style">
+				<div id="category-button">
+					<button class="category-style" id="cancel" onclick="closeContainer()">Cancel</button>
+					<button class="category-style" id="category-add" onclick="addCategory()">Add</button>
+				</div>
+			</div>
+			<div id="showExpense"></div>
+		</div>
+	</body>
+	<script src="https://kit.fontawesome.com/baefc7edb6.js" crossorigin="anonymous"></script>
+	<script src="addExpense.js"></script>
+	<script src="Logout.js"></script>
+	<script>
+		getCategories();
+	</script>
+</html>

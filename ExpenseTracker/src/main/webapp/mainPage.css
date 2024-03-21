@@ -1,0 +1,118 @@
+*{
+    padding:0% ;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 99.9vh;
+    width: 99.9vw;
+    background-color: #080808;
+    z-index: 1;
+}
+
+#wholeContainer{
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.infoContainer{
+    border: 1px solid white;
+    height: 25%;
+    width: 75%;
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.backgroundColor{
+    background-color: #36383e;
+}
+
+#statistics{
+    border: 1px solid white;
+    height: 38%;
+    width: 90%;
+    padding: 1%;
+}
+
+#ExpenseShowerContainer{
+    border: 1px solid white;
+    height: 25%;
+    width: 90%; 
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.expenseShower{
+    height: 75%;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Greeting{
+    color: white;
+}
+
+.greet{
+    color: white;
+}
+
+#infoShower{
+    border: 1px solid white;
+    height: 75%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerHead{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.amount{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.style-box{
+    height: 100%;
+    width: 30%;
+    padding: 1.5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Nothing{
+    color: white;
+}
+
+a{
+    color:white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: #36383e;
+}
